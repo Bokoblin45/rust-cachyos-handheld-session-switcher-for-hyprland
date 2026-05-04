@@ -1,0 +1,4 @@
+#!/bin/bash
+# ~/bin/switch-to-hyprland
+systemctl --user mask cachyos-gamescope-autologin.service
+pkexec /usr/lib/steamos/steam-set-session hyprland.desktop
