@@ -18,7 +18,7 @@ fn main() {
     let input = input.trim();
 
     if input == "Hyprland" {
-        let (_ret_val, stdout, stderr) = rash!("switch-to-hyprland").unwrap();
+        let (_ret_val, stdout, stderr) = rash!("systemctl --user mask cachyos-gamescope-autologin.service && pkexec /usr/lib/steamos/steam-set-session hyprland.desktop").unwrap();
         println!("session set to hyprland, {stdout} {stderr}");
 
     }
