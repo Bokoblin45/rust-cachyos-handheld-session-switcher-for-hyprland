@@ -28,7 +28,7 @@ fn main() {
     }
     else if input == "Plasma" {
         let (_ret_val, stdout, stderr) = rash!("systemctl --user mask cachyos-gamescope-autologin.service && pkexec /usr/lib/steamos/steam-set-session plasma.desktop").unwrap();
-        println!("session set to plasma, {stdout} {stderr}");c
+        println!("session set to plasma, {stdout} {stderr}");
     }
     else {
         println!("pick a valid option, you typed: {input} ");
